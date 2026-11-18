@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Team Login</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><span class="badge">PASSWORD HACKATHON</span><h1 id="team">Team</h1></header>
+    <nav id="navigation" hidden aria-label="Main navigation">
+      <a href="#/admin">Admin Landing Page</a>
+      <a href="#/page1">Page 1</a>
+      <a href="#/page2">Page 2</a>
+      <button id="logout" type="button">Logout</button>
+    </nav>
+    <p id="status" role="status" aria-live="polite"></p>
+    <section id="login" hidden>
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="username">Username</label>
+        <input id="username" name="username" autocomplete="username" maxlength="64" required>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" maxlength="128" required>
+        <button id="submit" type="submit">Login</button>
+      </form>
+    </section>
+    <section id="protected" hidden>
+      <h2 id="page-title"></h2>
+      <p id="welcome"></p>
+    </section>
+  </main>
+</body>
+</html>
